@@ -1,0 +1,170 @@
+/* global variables/ declaring  */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap");
+
+:root {
+  --Background-White: #ffffff;
+  --Font-Color1: #434543;
+  --Font-Color2: #0a4f9e;
+  --Hover-Color: beige;
+  --BorderBottomColor: rgb(153, 153, 153);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* Section  Styling */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.Footer {
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+}
+
+/* Element Styling */
+ul {
+  margin: 0;
+}
+.PartnerImgConditionalSizing {
+  width: 50%;
+}
+.PaddingVertical {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.PaddingHorizontal {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.PaddingHeadLine {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+.FitContent {
+  width: fit-content;
+}
+.Border {
+  border: 1px solid var(--Font-Color2);
+  padding: 10%;
+  border-radius: 10px;
+}
+
+.BorderBottom {
+  border-bottom: 1px solid rgb(153, 153, 153);
+}
+
+.BorderTop {
+  border-top: 1px solid rgb(153, 153, 153);
+}
+li {
+  margin: 0;
+  border-width: 2px;
+  padding: 1%;
+  list-style-type: none;
+}
+
+li a {
+  list-style-type: none;
+  text-decoration: none;
+  border-bottom-color: var(--main-bg-color);
+  color: var(--Font-Color1);
+}
+
+.ColorChangeonHover:hover {
+  background-color: var(--Hover-Color);
+}
+
+/* Positioning  */
+.RowColumn {
+  display: flex;
+  flex-direction: row;
+}
+
+.Sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: var(--Background-White);
+}
+
+.Center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.SpacedEvenly {
+  justify-content: space-around;
+}
+.SpacedBetween {
+  justify-content: space-around;
+}
+.Top {
+  display: flex;
+  align-items: baseline;
+}
+
+.Right {
+  margin-left: auto;
+}
+.TextRight {
+  text-align: right;
+}
+
+.Grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/* Font Styling  */
+.Bold2 {
+  font-weight: 900;
+  font-size: 22px;
+}
+.Bold1 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.FontColor1 {
+  color: var(--Font-Color1);
+}
+.FontColor2 {
+  color: var(--Font-Color2);
+}
+
+p {
+  font-size: 18px;
+}
+/* Media Query  */
+@media only screen and (max-width: 840px) {
+  .RowColumn {
+    display: flex;
+    flex-direction: column;
+  }
+  .Right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .PartnerImgConditionalSizing {
+    width: 100%;
+  }
+  .ConditionalBorderBottom {
+    border-bottom: 1px solid var(--BorderBottomColor);
+  }
+}
