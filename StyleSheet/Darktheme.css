@@ -3,8 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap");
 
 :root {
-  --Background-White: #ffffff;
-  --Font-Color1: #434543;
+  --Background-White: #080707;
+  --Font-Color1: #ffffff;
   --Font-Color2: #0a4f9e;
   --Hover-Color: beige;
   --BorderBottomColor: rgb(153, 153, 153);
@@ -12,6 +12,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--Background-White);
 }
 /* Section  Styling */
 html,
@@ -166,5 +167,8 @@ p {
   }
   .ConditionalBorderBottom {
     border-bottom: 1px solid var(--BorderBottomColor);
+  }
+  .RightSpecialCase {
+    margin-right: inherit;
   }
 }
